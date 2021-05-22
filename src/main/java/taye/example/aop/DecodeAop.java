@@ -22,7 +22,7 @@ public class DecodeAop {
 	@Pointcut("@annotation(taye.example.aop.annotation.Decode)")
 	private void enableDecode() {}
 	
-	@Before("cut() && enableDecode")
+	@Before("cut() && enableDecode()")
 	public void before(JoinPoint joinPoint) throws UnsupportedEncodingException {
 		Object[] args = joinPoint.getArgs();
 		for(Object arg : args) {
