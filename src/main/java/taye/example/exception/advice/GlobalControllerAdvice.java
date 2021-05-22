@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import taye.example.exception.dto.ErrorResponse;
 import taye.example.exception.dto.MyError;
 
-@RestControllerAdvice
+//@RestControllerAdvice
 public class GlobalControllerAdvice {
 	
 	@ExceptionHandler(value = Exception.class)
